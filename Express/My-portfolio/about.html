@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+        }
+        nav {
+            margin-top: -1%;
+            padding-top: 2%;
+            padding-left: 5%;
+            color: white;
+            position: fixed;
+            width: 100%;
+            background-color: black;
+            height: 70px;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-title {
+            font-weight: bold;
+            font-size: 180%;
+            color: orange;
+        }
+        .header {
+            display: flex;
+            gap: 8%;
+            font-size: 120%;
+            margin-right: 20%;
+        }
+        .header a {
+            text-decoration: none;
+            color: orange;
+        }
+        .about {
+            text-align: center;
+            font-size: 400%;
+            color: white;
+            padding-top: 10%;
+            font-weight: 700;
+        }
+        .description {
+            color: white;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 3%;
+            font-size: 140%;
+        }
+        .content {
+            display: flex;
+        }
+        .image-container {
+            width: 50%;
+            padding-left: 10%;
+            padding-top: 5%;
+        }
+        .image-container img {
+            width: 80%;
+        }
+        .info {
+            width: 50%;
+            color: white;
+            padding-top: 8%;
+        }
+        table {
+            width: 100%;
+            height: 100%;
+            font-size: x-large;
+        }
+        table td {
+            padding-right: 0.5%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-title">Rahul</div>
+            <div class="header">
+                <a href="./Home.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./education.html">Education</a>
+                <a href="./skills.html">Skills</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <div class="about" id="About">About Me</div>
+    <p class="description">
+        I specialize in building mobile responsive front-end applications that connect with API’s 
+        and other backend technologies. I’m passionate about learning new technologies and understand 
+        there is more than one way to accomplish a task. Though I am most proficient in building 
+        front-end applications using HTML, CSS, Javascript, and React, I am a quick learner and can 
+        pick up new tech stacks as needed. I think being a great developer means using the right 
+        tools for each job, instead of sticking to just one way of doing things.
+    </p>
+    <div class="content">
+        <div class="image-container">
+            <img src="./images/3.png" alt="Profile Picture">
+        </div>
+        <div class="info">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td class="personal">Rahul Sajeevan</td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td class="personal">November 11, 1999</td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td class="personal">Paingottoor, Ernakulam</td>
+                </tr>
+                <tr>
+                    <td>Zip code:</td>
+                    <td class="personal">686671</td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td class="personal">rahulrahulsajeevan007@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Phone:</td>
+                    <td class="personal">8606149231</td>
+                </tr>
+            </table>
+        </div>       
+    </div>
+</body>
+</html>

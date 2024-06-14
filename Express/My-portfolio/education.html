@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+        }
+        nav {
+            margin-top: -10%;
+            padding-top: 2%;
+            padding-left: 5%;
+            color: white;
+            position: fixed;
+            width: 100%;
+            background-color: black;
+            height: 70px;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-title {
+            font-weight: bold;
+            font-size: 180%;
+            color: orange;
+        }
+        .header {
+            display: flex;
+            gap: 8%;
+            font-size: 120%;
+            margin-right: 20%;
+        }
+        .header a {
+            text-decoration: none;
+            color: orange;
+        }
+        .education-section {
+            margin-top: 10%;
+        }
+        .section-title {
+            font-size: 400%;
+            font-weight: 700;
+            text-align: center;
+        }
+        .education-container {
+            display: flex;
+            margin: 8% 1% 4%;
+            gap: 2%;
+        }
+        .education-card {
+            background-color: rgba(48, 43, 43, 0.678);
+            width: 400px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .year, .course, .university, .place {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-title">Rahul</div>
+            <div class="header">
+                <a href="./Home.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./education.html">Education</a>
+                <a href="./skills.html">Skills</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <div id="Education" class="education-section">
+        <div class="section-title">Education</div>
+        <div class="education-container">
+            <div class="education-card">
+                <div class="year">2017-2020</div>
+                <div class="course">Bachelor of Computer Applications</div>
+                <div class="university">Nirmala College Muvattupuzha</div>
+                <div class="university">Mahatma Gandhi University Kottayam</div>
+            </div>
+            <div class="education-card">
+                <div class="year">2022-2024</div>
+                <div class="course">Masters in Computer Applications</div>
+                <div class="university">Cochin University of Science & Technology</div>
+                <div class="place">Kalamassery, Ernakulam</div>
+            </div>
+            <div class="education-card">
+                <div class="year">2024-2025</div>
+                <div class="course">PG Diploma in Blockchain Architecture</div>
+                <div class="university">Kerala Blockchain Academy</div>
+                <div class="university">Digital University of Kerala</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+        }
+        nav {
+            margin-top: -15%;
+            padding-top: 2%;
+            padding-left: 5%;
+            color: white;
+            position: fixed;
+            width: 100%;
+            background-color: black;
+            height: 70px;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-title {
+            font-weight: bold;
+            font-size: 180%;
+            color: orange;
+        }
+        .header {
+            display: flex;
+            gap: 8%;
+            font-size: 120%;
+            margin-right: 20%;
+        }
+        .header a {
+            text-decoration: none;
+            color: orange;
+        }
+        #Contact {
+            margin-top: 15%;
+            text-align: center;
+        }
+        #Contact h1 {
+            margin: 0;
+        }
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2%;
+        }
+        .form-group {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .form-group input, 
+        .form-group textarea {
+            width: 300px;
+            height: 30px;
+            padding: 5px;
+            font-size: 16px;
+        }
+        .form-group textarea {
+            height: 200px;
+        }
+        .form-group button {
+            width: 150px;
+            height: 40px;
+            text-align: center;
+            background-color: orange;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-group button:hover {
+            background-color: darkorange;
+        }
+        @media (max-width: 768px) {
+            .form-group input, 
+            .form-group textarea {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-title">Rahul</div>
+            <div class="header">
+                <a href="./Home.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./education.html">Education</a>
+                <a href="./skills.html">Skills</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <div id="Contact">
+        <h1>How can you communicate?</h1>
+        <h1 style="font-size: 300%; font-weight: 700; color: orange;">Contact me</h1>
+        <div class="form-container">
+            <form action="">
+                <div class="form-group">
+                    <input type="text" placeholder="Your name">
+                    <input type="email" placeholder="Enter Email">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Write Something"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

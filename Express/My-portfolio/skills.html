@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+        }
+        nav {
+            margin-top: -1%;
+            padding-top: 2%;
+            padding-left: 5%;
+            color: white;
+            position: fixed;
+            width: 100%;
+            background-color: black;
+            height: 70px;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-title {
+            font-weight: bold;
+            font-size: 180%;
+            color: orange;
+        }
+        .header {
+            display: flex;
+            gap: 8%;
+            font-size: 120%;
+            margin-right: 20%;
+        }
+        .header a {
+            text-decoration: none;
+            color: orange;
+        }
+        .section-title {
+            font-size: 400%;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 10%;
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 5% 3%;
+        }
+        .skill-card {
+            width: 150px;
+            height: 150px;
+            background-color: black;
+            text-align: center;
+            margin: 1%;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+        .skill-card img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+        .skill-card h3 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav style="margin-top: -10%;">
+        <div class="nav-container">
+            <div class="nav-title">Rahul</div>
+            <div class="header">
+                <a href="./Home.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./education.html">Education</a>
+                <a href="./skills.html">Skills</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <div id="Skills" class="section-title">SKILLS</div>
+    <div class="skills-container">
+        <div class="skill-card">
+            <img src="./images/HTML.png" alt="HTML">
+            <h3>HTML</h3>
+        </div>
+        <div class="skill-card">
+            <img src="./images/CSS.png" alt="CSS">
+            <h3>CSS</h3>
+        </div>
+        <div class="skill-card">
+            <img src="./images/javascript.png" alt="JavaScript">
+            <h3>JavaScript</h3>
+        </div>
+        <div class="skill-card">
+            <img src="./images/tail.png" alt="Tailwind">
+            <h3>Tailwind</h3>
+        </div>
+        <div class="skill-card">
+            <img src="./images/react.png" alt="React">
+            <h3>React</h3>
+        </div>
+        <div class="skill-card">
+            <img src="./images/Git.png" alt="GitHub">
+            <h3>GitHub</h3>
+        </div>
+        <div class="skill-card">
+            <img src="./images/mysql.png" alt="MySQL">
+            <h3>MySQL</h3>
+        </div>
+    </div>
+</body>
+</html>

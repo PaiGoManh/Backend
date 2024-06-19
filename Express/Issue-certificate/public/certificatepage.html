@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <nav class="flex justify-between items-center gap-2 py-2 px-4">
+        <div class="flex items-center gap-2">
+            <a href="/">
+                <button class=" text-black py-2 px-3 rounded-md cursor-pointer">Home</button>
+            </a>
+            <a href="/issuecert">
+                <button class="button-43 bg-blue-600 text-white py-1 px-2 rounded-md cursor-pointer">Issue another Certificate</button>
+            </a>
+        </div>
+    </nav>
+    <div class="flex items-center justify-center h-screen">
+        <div class="bg-white xl:w-[70%] md:w-[40%] sm:w-[20%] mx-auto  p-8 border border-gray-400 rounded-lg shadow-xl ">
+            <div class="pl-10 pt-8">
+                <div class="text-center font-bold text-lg">KERALA BLOCKCHAIN ACADEMY</div>
+                <div class="text-center pt-7">
+                    <a href="home.html">
+                        <img src="./2000920.png" alt="Kerala Blockchain Academy" class=" w-40 mx-auto"/>
+                    </a>
+                </div>
+                <div class="text-center pt-10 pb-3">This is to certify that ID:<span id="certificateId" class="font-extrabold pb-4 pl-2 pr-2"></span>Name<span id="candidateName" class="font-extrabold pb-4 pl-2 pr-2"></span> </div>
+                <div class="text-center pt-2 pb-3 ">has successfully completed <span id="course" class="font-extrabold pb-4"></span></div>
+                <div class="text-center pt-2  pb-[5%]">with<span id="grade" class="pr-2 pl-2 font-extrabold ">__________</span>Grade on <span id="issueDate" class="font-extrabold">___________</span></div>
+            </div>
+        </div>
+        <script>
+            async function fetchCertificate() {
+                const id = window.location.pathname.split('/').pop();
+                try {
+                    const response = await fetch(`/api/certificate/${id}`);
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch certificate details');
+                    }
+                    const data = await response.json();
+                    document.getElementById('certificateId').textContent = `${data.certificateId}`;
+                    document.getElementById('candidateName').textContent = `${data.candidateName}`;
+                    document.getElementById('course').textContent = `${data.course}`;
+                    document.getElementById('grade').textContent = `${data.grade}`;
+                    document.getElementById('issueDate').textContent = `${data.issueDate}`;
+                } catch (error) {
+                    console.error('Error fetching certificate details:', error);
+                    document.body.innerHTML = '<p>Failed to load certificate details.</p>';
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', fetchCertificate);
+        </script>
+    </div>
+</body>
+</html>
